@@ -1,11 +1,13 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from './../assets/ICEMexico.png'
+import user from './../assets/Profile.png'
+
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Estudiantes', href: 'Estudiante', current: false },
+  { name: 'Certificaciones', href: 'Certificaciones', current: false },
+  { name: 'Evaluaciones', href: 'Evaluaciones', current: false },
+  { name: 'Registros', href: 'Registros', current: false },
 ]
 
 function classNames(...classes) {
@@ -64,7 +66,6 @@ export default function Navbar() {
               <BellIcon aria-hidden="true" className="size-6" />
             </button>
 
-            {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
@@ -72,7 +73,7 @@ export default function Navbar() {
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt=""
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src={user}
                     className="size-8 rounded-full"
                   />
                 </MenuButton>
@@ -86,7 +87,7 @@ export default function Navbar() {
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                   >
-                    Your Profile
+                    Tu Perfil
                   </a>
                 </MenuItem>
                 <MenuItem>
@@ -94,7 +95,7 @@ export default function Navbar() {
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                   >
-                    Settings
+                    Configuración
                   </a>
                 </MenuItem>
                 <MenuItem>
@@ -102,7 +103,7 @@ export default function Navbar() {
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                   >
-                    Sign out
+                    Cerrar  sesión
                   </a>
                 </MenuItem>
               </MenuItems>
