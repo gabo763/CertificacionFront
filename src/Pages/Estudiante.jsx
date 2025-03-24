@@ -70,6 +70,18 @@ export default function Estudiante() {
 
     return (
         <div>
+              <div>
+      {/* Botón para abrir el modal */}
+      <div className="flex items-center justify-between mt-4">
+        <button
+          className="bg-blue-950 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
+          onClick={openModal}
+        >
+          Crear Nuevo
+        </button>
+      </div>
+      </div>
+
             {isModalOpen && <ModalEstuadiante closeModal={closeModal} />}
 
             <div>
