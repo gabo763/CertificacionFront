@@ -43,8 +43,8 @@ function Navbar() {
         {/* Menú móvil */}
         {isOpen && (
           <div className="sm:hidden mt-2 space-y-2">
-            <Link to="/" className="block text-gray-300 hover:text-white px-3 py-2">Inicio</Link>
-            <Link to="/about" className="block text-gray-300 hover:text-white px-3 py-2">Sobre mí</Link>
+            <a href="/" className="block text-gray-300 hover:text-white px-3 py-2">Inicio</a>
+            <a href="/about" className="block text-gray-300 hover:text-white px-3 py-2">Sobre mí</a>
             <a href="/experience" className="block text-gray-300 hover:text-white px-3 py-2">Experiencia</a>
             <a href="/knowledge" className="block text-gray-300 hover:text-white px-3 py-2">Conocimientos</a>
             <a href="/skills" className="block text-gray-300 hover:text-white px-3 py-2">Habilidades</a>
