@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './assets/components/Navbar';
 import Index from './assets/pages/Index';
 import About from './assets/pages/About';
@@ -10,6 +10,25 @@ import Skills from './assets/pages/Skills';
 import Projects from './assets/pages/Projects';
 import Knowledge from './assets/pages/Knowledge';
 
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <div className="pt-20 px-4">
+        <Index />
+        <About />
+        <Experience />
+        <Knowledge />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </div>
+    </>
+  );
+}
+/*
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +47,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+}*/
 
 export default App;
