@@ -1,5 +1,7 @@
 import './App.css';
 //import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { ThemeProvider } from "./assets/context/ThemeContext";
 import Navbar from './assets/components/Navbar';
 import Index from './assets/pages/Index';
 import About from './assets/pages/About';
@@ -13,7 +15,7 @@ import Knowledge from './assets/pages/Knowledge';
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Navbar />
       <div className="pt-20 px-4">
         <Index />
@@ -25,7 +27,7 @@ function App() {
         <Education />
         <Contact />
       </div>
-    </>
+    </ThemeProvider>
   );
 }
 /*
