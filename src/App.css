@@ -43,7 +43,7 @@
 /*
 //Fondo de pantalla en caso de requerir alguna imagen para este
 body {
-  background-image: url('./assets/images/fondo2.jpg');
+  background-image: url('./assets/images/fondoclaro.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
